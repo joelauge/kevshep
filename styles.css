@@ -78,6 +78,7 @@ body {
     font-size: 1.1rem;
     letter-spacing: 0.15em;
     color: var(--text-primary);
+    text-decoration: none;
 }
 
 .nav-links {
