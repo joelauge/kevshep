@@ -570,15 +570,22 @@ body {
         height: 300px;
     }
 }
+
 /* Multi-page shared styles & earthy aesthetics */
 :root {
-    --bg-color: #fcfbfa; /* Off-white warm background */
-    --text-primary: #383a31; /* Earthy dark grey/green */
-    --text-secondary: #5e6b52; /* Lighter olive/green text */
-    --accent-color: #263c1b; /* Dark Forest Green */
+    --bg-color: #fcfbfa;
+    /* Off-white warm background */
+    --text-primary: #383a31;
+    /* Earthy dark grey/green */
+    --text-secondary: #5e6b52;
+    /* Lighter olive/green text */
+    --accent-color: #263c1b;
+    /* Dark Forest Green */
     --accent-hover: #1a2a12;
-    --form-bg: #d6ccbd; /* Beige form field background */
-    --btn-bg: #d6ccbd; /* Beige submit button */
+    --form-bg: #d6ccbd;
+    /* Beige form field background */
+    --btn-bg: #d6ccbd;
+    /* Beige submit button */
 }
 
 /* Navbar active state updates */
@@ -586,9 +593,12 @@ body {
     font-weight: 700;
     color: var(--accent-color);
 }
+
 .nav-link::after {
-    display: none; /* remove underlines for cleaner active states */
+    display: none;
+    /* remove underlines for cleaner active states */
 }
+
 .nav-links {
     gap: 2.5rem;
 }
@@ -621,11 +631,13 @@ body {
 .contact-title {
     font-size: 3rem;
     font-weight: 800;
-    color: #4a3c31; /* Dark brownish */
+    color: #4a3c31;
+    /* Dark brownish */
     margin-bottom: 1rem;
 }
 
-.contact-subtitle, .contact-email {
+.contact-subtitle,
+.contact-email {
     font-size: 0.9rem;
     color: #4a3c31;
     margin-bottom: 0.5rem;
@@ -674,7 +686,8 @@ body {
     pointer-events: none;
 }
 
-.form-col input, .form-col textarea {
+.form-col input,
+.form-col textarea {
     background-color: var(--form-bg);
     border: none;
     border-radius: 0;
@@ -687,7 +700,7 @@ body {
 }
 
 /* Custom textarea label positioning */
-.form-col textarea + label {
+.form-col textarea+label {
     top: 40px;
 }
 
@@ -717,11 +730,53 @@ body {
 
 /* Speaker Inquiry Specific */
 .speaker-page {
+    display: flex;
+    flex-direction: column;
+    padding-top: 12rem;
+    gap: var(--spacing-md);
+    width: 100%;
+}
+
+.speaker-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--spacing-xl);
     align-items: start;
-    padding-top: 12rem;
+    width: 100%;
+}
+
+.testimonials-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.testimonial-card {
+    background-color: #e2cca6;
+    /* matches the image */
+    padding: 3.5rem 2.5rem;
+    border-radius: 8px;
+    /* Slightly rounded corners */
+    text-align: center;
+    color: #5c5346;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.testimonial-card p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.testimonial-card .testimonial-author {
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-bottom: 0;
 }
 
 .speaker-heading {
@@ -773,8 +828,15 @@ body {
 }
 
 @media (max-width: 1024px) {
-    .contact-page, .speaker-page {
+
+    .contact-page,
+    .speaker-grid,
+    .testimonials-container {
         grid-template-columns: 1fr;
+    }
+
+    .contact-page,
+    .speaker-page {
         padding-top: 8rem;
     }
 }
