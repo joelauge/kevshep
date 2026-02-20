@@ -354,3 +354,198 @@ body {
         padding: calc(var(--spacing-xl) + 2rem) var(--spacing-sm) var(--spacing-lg);
     }
 }
+
+/* Vision Minute Section */
+.vision-section {
+    padding: var(--spacing-lg) var(--spacing-sm);
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-lg);
+}
+
+.vision-hero-banner {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    background-color: #0b2e2b; /* Dark teal background */
+    height: 400px;
+}
+
+.vision-hero-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacing-lg);
+    color: #f7e6e0;
+    position: relative;
+    /* Adding a subtle SVG pattern background could go here */
+}
+
+.vision-title-wrapper {
+    text-align: center;
+    line-height: 0.8;
+}
+
+.vision-title-main {
+    font-size: 5rem;
+    font-weight: 300;
+    letter-spacing: -0.02em;
+}
+
+.vision-title-script {
+    font-family: 'Brush Script MT', 'cursive', sans-serif; /* Fallback for script */
+    font-size: 4rem;
+    font-style: italic;
+    color: #f7e6e0;
+    margin-top: -10px;
+    transform: rotate(-5deg);
+}
+
+.vision-subtitle {
+    margin-top: 2rem;
+    color: #f07e54; /* Orange accent */
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.vision-hero-right {
+    flex: 1;
+    overflow: hidden;
+}
+
+.vision-portrait-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
+
+/* Signup Form */
+.vision-signup-card {
+    background-color: #fcece9; /* Light peachy background */
+    padding: var(--spacing-lg);
+    width: 100%;
+    max-width: 800px;
+    border-radius: 4px;
+    text-align: left;
+}
+
+.signup-title {
+    font-weight: 700;
+    color: #333;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.signup-subtext {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: var(--spacing-md);
+}
+
+.vision-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #444;
+}
+
+.form-group .required {
+    color: red;
+}
+
+.form-group input {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.form-disclaimer {
+    font-size: 0.6rem;
+    color: #777;
+    line-height: 1.4;
+    margin-top: 0.5rem;
+}
+
+.btn-submit {
+    background-color: #f07e54; /* Orange/Coral button */
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 0.5rem;
+}
+
+.btn-submit:hover {
+    background-color: #e06c42;
+}
+
+/* About Text */
+.vision-about-text {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    padding: var(--spacing-md) 0;
+}
+
+.about-title {
+    font-family: serif;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: var(--spacing-md);
+    font-weight: 400;
+}
+
+.about-content {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.bold-leadin {
+    font-weight: 700;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .vision-hero-banner {
+        flex-direction: column;
+        height: auto;
+    }
+    .vision-title-main {
+        font-size: 3.5rem;
+    }
+    .vision-title-script {
+        font-size: 3rem;
+    }
+    .vision-portrait-img {
+        height: 300px;
+    }
+}
