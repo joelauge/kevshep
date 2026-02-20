@@ -145,16 +145,19 @@ body {
 .watermark-text {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 45%;
+    /* Shift slightly left to balance the nav */
     transform: translate(-50%, -50%);
-    font-size: clamp(8rem, 15vw, 24rem);
-    font-weight: 600;
+    font-size: clamp(8rem, 18vw, 24rem);
+    /* Increased size slightly */
+    font-weight: 700;
     color: var(--text-watermark);
     white-space: nowrap;
     z-index: 0;
     user-select: none;
     pointer-events: none;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.05em;
+    /* Tighter letter spacing for serif */
 }
 
 .hero-content-wrapper {
