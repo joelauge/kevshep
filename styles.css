@@ -3,17 +3,18 @@
     --text-primary: #1a1a1a;
     --text-secondary: #5a5a5a;
     --text-watermark: rgba(0, 0, 0, 0.03);
-    --accent-color: #1B3012; /* Dark Forest Green */
+    --accent-color: #1B3012;
+    /* Dark Forest Green */
     --accent-hover: #2a4a1c;
-    
+
     --font-main: 'Inter', sans-serif;
-    
+
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
     --spacing-md: 2rem;
     --spacing-lg: 4rem;
     --spacing-xl: 8rem;
-    
+
     --transition-smooth: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -69,7 +70,7 @@ body {
     padding: var(--spacing-sm) var(--spacing-lg);
     background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .brand {
@@ -95,7 +96,8 @@ body {
     transition: var(--transition-smooth);
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover,
+.nav-link.active {
     color: var(--text-primary);
 }
 
@@ -110,7 +112,8 @@ body {
     transition: var(--transition-smooth);
 }
 
-.nav-link:hover::after, .nav-link.active::after {
+.nav-link:hover::after,
+.nav-link.active::after {
     width: 100%;
 }
 
@@ -169,7 +172,7 @@ body {
     position: relative;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 30px 60px rgba(0,0,0,0.08);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.08);
     transform: translateY(0);
     transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -184,6 +187,7 @@ body {
     display: block;
     aspect-ratio: 4/5;
     object-fit: cover;
+    object-position: center top;
     filter: grayscale(20%) contrast(1.1);
     transition: filter 0.6s ease;
 }
@@ -292,9 +296,17 @@ body {
     transform: translateY(0);
 }
 
-.delay-1 { transition-delay: 0.1s; }
-.delay-2 { transition-delay: 0.2s; }
-.delay-3 { transition-delay: 0.3s; }
+.delay-1 {
+    transition-delay: 0.1s;
+}
+
+.delay-2 {
+    transition-delay: 0.2s;
+}
+
+.delay-3 {
+    transition-delay: 0.3s;
+}
 
 /* Placeholder Sections */
 .placeholder-section {
@@ -318,16 +330,16 @@ body {
     .section-heading::before {
         display: none;
     }
-    
+
     .hero-image-container {
         max-width: 600px;
         margin: 0 auto;
     }
-    
+
     .hero-text-container {
         margin: 0 auto;
     }
-    
+
     .bio-content p {
         font-size: 1.05rem;
     }
@@ -337,19 +349,20 @@ body {
     .navbar {
         padding: var(--spacing-sm);
     }
-    
+
     .nav-links {
-        display: none; /* Add mobile menu logic if needed */
+        display: none;
+        /* Add mobile menu logic if needed */
     }
-    
+
     .mobile-menu-btn {
         display: flex;
     }
-    
+
     .watermark-text {
         font-size: 5rem;
     }
-    
+
     .hero-section {
         padding: calc(var(--spacing-xl) + 2rem) var(--spacing-sm) var(--spacing-lg);
     }
@@ -372,8 +385,9 @@ body {
     max-width: 1000px;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-    background-color: #0b2e2b; /* Dark teal background */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    background-color: #0b2e2b;
+    /* Dark teal background */
     height: 400px;
 }
 
@@ -401,7 +415,8 @@ body {
 }
 
 .vision-title-script {
-    font-family: 'Brush Script MT', 'cursive', sans-serif; /* Fallback for script */
+    font-family: 'Brush Script MT', 'cursive', sans-serif;
+    /* Fallback for script */
     font-size: 4rem;
     font-style: italic;
     color: #f7e6e0;
@@ -411,7 +426,8 @@ body {
 
 .vision-subtitle {
     margin-top: 2rem;
-    color: #f07e54; /* Orange accent */
+    color: #f07e54;
+    /* Orange accent */
     font-weight: 600;
     letter-spacing: 0.1em;
     font-size: 1.1rem;
@@ -432,7 +448,8 @@ body {
 
 /* Signup Form */
 .vision-signup-card {
-    background-color: #fcece9; /* Light peachy background */
+    background-color: #fcece9;
+    /* Light peachy background */
     padding: var(--spacing-lg);
     width: 100%;
     max-width: 800px;
@@ -488,7 +505,8 @@ body {
 }
 
 .btn-submit {
-    background-color: #f07e54; /* Orange/Coral button */
+    background-color: #f07e54;
+    /* Orange/Coral button */
     color: white;
     border: none;
     padding: 1rem;
@@ -539,13 +557,224 @@ body {
         flex-direction: column;
         height: auto;
     }
+
     .vision-title-main {
         font-size: 3.5rem;
     }
+
     .vision-title-script {
         font-size: 3rem;
     }
+
     .vision-portrait-img {
         height: 300px;
+    }
+}
+/* Multi-page shared styles & earthy aesthetics */
+:root {
+    --bg-color: #fcfbfa; /* Off-white warm background */
+    --text-primary: #383a31; /* Earthy dark grey/green */
+    --text-secondary: #5e6b52; /* Lighter olive/green text */
+    --accent-color: #263c1b; /* Dark Forest Green */
+    --accent-hover: #1a2a12;
+    --form-bg: #d6ccbd; /* Beige form field background */
+    --btn-bg: #d6ccbd; /* Beige submit button */
+}
+
+/* Navbar active state updates */
+.nav-link.active {
+    font-weight: 700;
+    color: var(--accent-color);
+}
+.nav-link::after {
+    display: none; /* remove underlines for cleaner active states */
+}
+.nav-links {
+    gap: 2.5rem;
+}
+
+/* Clean up hero section border radius since mockups are sharp */
+.hero-image-container {
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* Generic page container for non-hero pages */
+.page-container {
+    min-height: 100vh;
+    padding: calc(var(--spacing-xl) + 4rem) var(--spacing-lg) var(--spacing-lg);
+    display: flex;
+    justify-content: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Contact Page specific */
+.contact-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+    align-items: start;
+    padding-top: 15rem;
+}
+
+.contact-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #4a3c31; /* Dark brownish */
+    margin-bottom: 1rem;
+}
+
+.contact-subtitle, .contact-email {
+    font-size: 0.9rem;
+    color: #4a3c31;
+    margin-bottom: 0.5rem;
+}
+
+.contact-email {
+    margin-top: 2rem;
+}
+
+/* Flat Form styles (used by Contact and Speaker Inquiry) */
+.flat-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+.form-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-col.full-width {
+    width: 100%;
+}
+
+.form-col label {
+    font-size: 0.70rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #383a31;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    /* Move label into input */
+    position: relative;
+    top: 24px;
+    left: 12px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.form-col input, .form-col textarea {
+    background-color: var(--form-bg);
+    border: none;
+    border-radius: 0;
+    padding: 2.5rem 1rem 1rem 1rem;
+    font-family: var(--font-main);
+    font-size: 1rem;
+    color: #383a31;
+    width: 100%;
+    outline: none;
+}
+
+/* Custom textarea label positioning */
+.form-col textarea + label {
+    top: 40px;
+}
+
+.form-col textarea {
+    resize: none;
+}
+
+.btn-flat {
+    background-color: var(--btn-bg);
+    color: #383a31;
+    border: none;
+    border-radius: 0;
+    padding: 1.2rem;
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-top: 1rem;
+    width: 150px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-flat:hover {
+    background-color: #c4baab;
+}
+
+/* Speaker Inquiry Specific */
+.speaker-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+    align-items: start;
+    padding-top: 12rem;
+}
+
+.speaker-heading {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #4a3c31;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.speaker-subheading {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #263c1b;
+    margin-bottom: 2rem;
+}
+
+.speaker-img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: center top;
+    margin-bottom: 2rem;
+}
+
+.speaker-available p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #383a31;
+}
+
+.speaker-available ul {
+    list-style-type: none;
+    padding-left: 1.5rem;
+}
+
+.speaker-available li {
+    font-size: 1.1rem;
+    position: relative;
+    margin-bottom: 0.25rem;
+    color: #383a31;
+}
+
+.speaker-available li::before {
+    content: "•";
+    position: absolute;
+    left: -1.2rem;
+    color: #383a31;
+}
+
+@media (max-width: 1024px) {
+    .contact-page, .speaker-page {
+        grid-template-columns: 1fr;
+        padding-top: 8rem;
     }
 }

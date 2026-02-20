@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Particle Canvas Animation (Antigravity Aesthetic)
     const canvas = document.getElementById('particle-canvas');
     if (!canvas) return;
-    
+
     const ctx = canvas.getContext('2d');
     let width, height;
     let particles = [];
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
         mouse.x = e.clientX;
         mouse.y = e.clientY;
     });
-    
+
     window.addEventListener('mouseleave', () => {
         mouse.x = -1000;
         mouse.y = -1000;
@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     this.y -= dy / 20;
                 }
             }
-            
+
             // Slow organic drift
             this.baseX += (Math.random() - 0.5) * 0.2;
             this.baseY += (Math.random() - 0.5) * 0.2;
@@ -125,9 +125,19 @@ document.addEventListener('DOMContentLoaded', () => {
     // Parallax effect on scroll for watermark
     const watermark = document.querySelector('.watermark-text');
     window.addEventListener('scroll', () => {
-        if(watermark) {
+        if (watermark) {
             const scrollPos = window.scrollY;
             watermark.style.transform = `translate(-50%, calc(-50% + ${scrollPos * 0.2}px))`;
+        }
+    });
+
+    // Dynamic Active Nav Link
+    const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === currentPath) {
+            link.classList.add('active');
         }
     });
 

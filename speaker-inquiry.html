@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Shepherd | Speaker Inquiry</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <canvas id="particle-canvas"></canvas>
+
+    <nav class="navbar">
+        <div class="brand">KEVIN SHEPHERD</div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">ABOUT</a>
+            <a href="vision-minutes.html" class="nav-link">VISION MINUTES</a>
+            <a href="speaker-inquiry.html" class="nav-link active">SPEAKER INQUIRY</a>
+            <a href="contact.html" class="nav-link">CONTACT</a>
+        </div>
+        <div class="mobile-menu-btn">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+
+    <main class="page-container speaker-page fade-up">
+        <div class="speaker-content">
+            <h1 class="speaker-heading">Great leaders build great leaders who build great leaders.</h1>
+            <p class="speaker-subheading">Interested in Kevin Shepherd speaking at your event?</p>
+
+            <img src="images/hero-optimized.jpg" alt="Kevin Shepherd Speaking" class="speaker-img">
+
+            <div class="speaker-available">
+                <p>Kevin is available for:</p>
+                <ul>
+                    <li>Keynotes</li>
+                    <li>Breakout sessions</li>
+                    <li>Discussion panels</li>
+                    <li>Podcasts</li>
+                    <li>Television Interviews</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="speaker-form-container">
+            <form class="flat-form">
+                <div class="form-row">
+                    <div class="form-col">
+                        <label for="firstName">FIRST NAME</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-col">
+                        <label for="lastName">LAST NAME</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-col full-width">
+                        <label for="email">E-MAIL</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-col full-width">
+                        <label for="org">HOST ORGANIZATION</label>
+                        <input type="text" id="org" name="org">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-col full-width">
+                        <label for="eventType">EVENT TYPE</label>
+                        <input type="text" id="eventType" name="eventType">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-col full-width">
+                        <label for="date">EVENT DATE/ TIME</label>
+                        <input type="text" id="date" name="date">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-col full-width">
+                        <label for="msg">MESSAGE REQUESTED</label>
+                        <input type="text" id="msg" name="msg">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-col full-width">
+                        <label for="info">ADDITIONAL INFORMATION</label>
+                        <input type="text" id="info" name="info">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-flat">SUBMIT</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
